@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MissingRanges", "GooglePrep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextClosedTime", "NextClosedTime\NextClosedTime.csproj", "{A22AD214-1A26-443C-8773-C46B0D3F7482}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindReplaceString", "FindReplaceString\FindReplaceString.csproj", "{A8158D3F-DF1B-405C-9151-14FE33BFF68A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A22AD214-1A26-443C-8773-C46B0D3F7482}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A22AD214-1A26-443C-8773-C46B0D3F7482}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A22AD214-1A26-443C-8773-C46B0D3F7482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8158D3F-DF1B-405C-9151-14FE33BFF68A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8158D3F-DF1B-405C-9151-14FE33BFF68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8158D3F-DF1B-405C-9151-14FE33BFF68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8158D3F-DF1B-405C-9151-14FE33BFF68A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
