@@ -16,14 +16,17 @@ namespace FindReplaceString
         {
            
             int offset = 0;
-            int 
+            int firstShift = indices[0];
             for(int i = 0; i < indices.Length; i++)
             {
                 if (s.Substring(indices[i]+offset, sources[i].Length).Equals(sources[i]))
                 {
                     s = s.Replace(sources[i], targets[i]);
-                    Console.WriteLine(s);
-                    offset = targets[i].Length-sources[i].Length;
+                    //Console.WriteLine(s);
+                    if (i < indices.Length - 1 && indices[i + 1] > firstShift)
+                        offset = targets[i].Length - sources[i].Length;
+                    else
+                        offset = 0;
                 }
                 else
                     offset = 0;
