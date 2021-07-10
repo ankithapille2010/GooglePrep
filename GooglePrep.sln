@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextClosedTime", "NextClose
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindReplaceString", "FindReplaceString\FindReplaceString.csproj", "{A8158D3F-DF1B-405C-9151-14FE33BFF68A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxDistToClosest", "MaxDistToClosest\MaxDistToClosest.csproj", "{BFC4726C-2645-4815-A3A5-43D5BAF5A2EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A8158D3F-DF1B-405C-9151-14FE33BFF68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8158D3F-DF1B-405C-9151-14FE33BFF68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8158D3F-DF1B-405C-9151-14FE33BFF68A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFC4726C-2645-4815-A3A5-43D5BAF5A2EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC4726C-2645-4815-A3A5-43D5BAF5A2EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC4726C-2645-4815-A3A5-43D5BAF5A2EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC4726C-2645-4815-A3A5-43D5BAF5A2EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
