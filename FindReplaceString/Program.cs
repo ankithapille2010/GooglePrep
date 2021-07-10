@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace FindReplaceString
 {
@@ -6,30 +7,32 @@ namespace FindReplaceString
     {
         static void Main(string[] args)
         {
-            string[] sources = { "kg", "ggq","mo" };
-            string[] targets = { "s", "so", "bfr" }; // "vbfrssozp"
-            int[] indices = { 3, 5,1 };
-            Console.WriteLine(FindReplaceString("vmokgggqzp",indices,sources,targets));
+            string[] sources = { "bn", "zzc","wxc" };
+            string[] targets = { "t", "lwb", "nee" }; // "vbfrssozp"
+            int[] indices = { 5, 2,7 };
+            Console.WriteLine(FindReplaceString("wqzzcbnwxc",indices,sources,targets));
         }
 
         public static string FindReplaceString(string s, int[] indices, string[] sources, string[] targets)
         {
-           
-            int offset = 0;
-            int firstShift = indices[0];
+
+            SortedDictionary<int, int> str = new SortedDictionary<int, int>(); 
             for(int i = 0; i < indices.Length; i++)
             {
-                if (s.Substring(indices[i]+offset, sources[i].Length).Equals(sources[i]))
+                if (s.Substring(indices[i], sources[i].Length).Equals(sources[i]))
                 {
-                    s = s.Replace(sources[i], targets[i]);
-                    //Console.WriteLine(s);
-                    if (i < indices.Length - 1 && indices[i + 1] > firstShift)
-                        offset = targets[i].Length - sources[i].Length;
-                    else
-                        offset = 0;
+                    str.Add(indices[i],i);
                 }
-                else
-                    offset = 0;
+                
+            }
+            int offset = 0;
+            foreach(KeyValuePair<int,int> st in str)
+            {
+                Console.WriteLine(s.Substring(st.Key, sources[st.Value].Length + offset));
+
+                s = s.Replace(s.Substring(st.Key,sources[st.Value].Length+offset),targets[st.Value]);
+                Console.WriteLine(s);
+                offset = offset + targets[st.Value].Length - sources[st.Value].Length;
             }
             return s;
         }
