@@ -16,6 +16,7 @@ namespace FindReplaceString
         {
            
             int offset = 0;
+            int 
             for(int i = 0; i < indices.Length; i++)
             {
                 if (s.Substring(indices[i]+offset, sources[i].Length).Equals(sources[i]))
