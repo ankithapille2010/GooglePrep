@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeKSortedLists-Alt", "Me
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeKSortedLinkedList", "..\..\..\source\repos\MergeKSortedLinkedList\MergeKSortedLinkedList\MergeKSortedLinkedList.csproj", "{9B2ADE41-6B7D-4E7A-A4DB-4645E6FEDF0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrappingRainWater", "TrappingRainWater\TrappingRainWater.csproj", "{415E7CE8-5CE7-4B1F-BD93-2F821CD9AA38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KthLargestElement", "KthLargestElement\KthLargestElement.csproj", "{98E050F3-D400-4022-8C82-96854A8C9751}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{9B2ADE41-6B7D-4E7A-A4DB-4645E6FEDF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B2ADE41-6B7D-4E7A-A4DB-4645E6FEDF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B2ADE41-6B7D-4E7A-A4DB-4645E6FEDF0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{415E7CE8-5CE7-4B1F-BD93-2F821CD9AA38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{415E7CE8-5CE7-4B1F-BD93-2F821CD9AA38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{415E7CE8-5CE7-4B1F-BD93-2F821CD9AA38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{415E7CE8-5CE7-4B1F-BD93-2F821CD9AA38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98E050F3-D400-4022-8C82-96854A8C9751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E050F3-D400-4022-8C82-96854A8C9751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E050F3-D400-4022-8C82-96854A8C9751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E050F3-D400-4022-8C82-96854A8C9751}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
