@@ -9,7 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextClosedTime", "NextClose
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindReplaceString", "FindReplaceString\FindReplaceString.csproj", "{A8158D3F-DF1B-405C-9151-14FE33BFF68A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxDistToClosest", "MaxDistToClosest\MaxDistToClosest.csproj", "{BFC4726C-2645-4815-A3A5-43D5BAF5A2EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxDistToClosest", "MaxDistToClosest\MaxDistToClosest.csproj", "{BFC4726C-2645-4815-A3A5-43D5BAF5A2EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidParanthesis", "ValidParanthesis\ValidParanthesis.csproj", "{F560D94A-1932-4FA5-ACF9-69C3BFF1FA56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeKSortedLists-Alt", "MergeKSortedLists\MergeKSortedLists-Alt.csproj", "{CD0D5FF2-A442-422A-A50D-A4FE59A09E34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeKSortedLinkedList", "..\..\..\source\repos\MergeKSortedLinkedList\MergeKSortedLinkedList\MergeKSortedLinkedList.csproj", "{9B2ADE41-6B7D-4E7A-A4DB-4645E6FEDF0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{BFC4726C-2645-4815-A3A5-43D5BAF5A2EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFC4726C-2645-4815-A3A5-43D5BAF5A2EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFC4726C-2645-4815-A3A5-43D5BAF5A2EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F560D94A-1932-4FA5-ACF9-69C3BFF1FA56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F560D94A-1932-4FA5-ACF9-69C3BFF1FA56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F560D94A-1932-4FA5-ACF9-69C3BFF1FA56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F560D94A-1932-4FA5-ACF9-69C3BFF1FA56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD0D5FF2-A442-422A-A50D-A4FE59A09E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0D5FF2-A442-422A-A50D-A4FE59A09E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0D5FF2-A442-422A-A50D-A4FE59A09E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0D5FF2-A442-422A-A50D-A4FE59A09E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B2ADE41-6B7D-4E7A-A4DB-4645E6FEDF0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2ADE41-6B7D-4E7A-A4DB-4645E6FEDF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B2ADE41-6B7D-4E7A-A4DB-4645E6FEDF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B2ADE41-6B7D-4E7A-A4DB-4645E6FEDF0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

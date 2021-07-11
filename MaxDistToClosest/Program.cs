@@ -55,7 +55,7 @@ namespace MaxDistToClosest
                     prev_filled = i;
                 }
                 else
-                    while ((seats[future] == 0 && future < seats.Length) || future < i)
+                    while ((future < seats.Length && seats[future] == 0 ) || future < i)
                         future++;
 
                 left = prev_filled == -1 ? seats.Length : i - prev_filled;
