@@ -7,7 +7,7 @@ namespace MaxDistToClosest
     {
         static void Main(string[] args)
         {
-            int[] seats = { 0, 1 };
+            int[] seats = { 1, 0,0,0 };
             Console.WriteLine(MaxDistToClosest(seats));
         }
 
@@ -44,7 +44,26 @@ namespace MaxDistToClosest
              }*/
 
             // Alternate Solutions
-            for(int i=0)
+            int prev_filled=-1;
+            int future = 0;
+            int left = 0;
+            int right = 0;
+            for (int i = 0; i < seats.Length; i++)
+            {
+                if (seats[i] == 1)
+                {
+                    prev_filled = i;
+                }
+                else
+                    while ((seats[future] == 0 && future < seats.Length) || future < i)
+                        future++;
+
+                left = prev_filled == -1 ? seats.Length : i - prev_filled;
+                right = future == seats.Length ? seats.Length : future - i;
+
+                maxdist = Math.Max(maxdist, Math.Min(left, right));
+            }
+
             return maxdist;
         }
     }
