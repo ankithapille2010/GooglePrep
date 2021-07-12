@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeKSortedLinkedList", ".
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrappingRainWater", "TrappingRainWater\TrappingRainWater.csproj", "{415E7CE8-5CE7-4B1F-BD93-2F821CD9AA38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KthLargestElement", "KthLargestElement\KthLargestElement.csproj", "{98E050F3-D400-4022-8C82-96854A8C9751}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KthLargestElement", "KthLargestElement\KthLargestElement.csproj", "{98E050F3-D400-4022-8C82-96854A8C9751}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingRooms", "MeetingRooms\MeetingRooms.csproj", "{99C59579-4B07-4273-9FC7-310D93D92954}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{98E050F3-D400-4022-8C82-96854A8C9751}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98E050F3-D400-4022-8C82-96854A8C9751}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98E050F3-D400-4022-8C82-96854A8C9751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C59579-4B07-4273-9FC7-310D93D92954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C59579-4B07-4273-9FC7-310D93D92954}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C59579-4B07-4273-9FC7-310D93D92954}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C59579-4B07-4273-9FC7-310D93D92954}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
