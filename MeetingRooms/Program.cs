@@ -7,7 +7,8 @@ namespace MeetingRooms
     {
         static void Main(string[] args)
         {
-            int[,] intervals = { { 0, 30 }, { 5, 10 }, { 15, 20 } };// { { 1, 10 }, { 2, 7 }, { 3, 19 }, { 8, 12 }, { 10, 20 }, { 11, 30 } };
+            int[,] intervals = { { 1, 10 }, { 2, 7 }, { 3, 19 }, { 8, 12 }, { 10, 20 }, { 11, 30 } };
+            //{ { 0, 30 }, { 5, 10 }, { 15, 20 } }
             Console.WriteLine(MinMeetingRooms(intervals));
 
         }
@@ -31,15 +32,8 @@ namespace MeetingRooms
             int sPointer = 0;
             
             while(sPointer< startTimes.Length) {
-                //Console.Write(startTimes[sPointer]+ " " + endTimes[ePointer]+" "+);
-                if (startTimes[sPointer] > endTimes[ePointer])
+                if (startTimes[sPointer] >= endTimes[ePointer])
                 {
-                    numofRooms--;
-                    ePointer++;
-                }
-                else if (startTimes[sPointer] == endTimes[ePointer])
-                {
-                    numofRooms++;
                     ePointer++;
                 }
                 else
