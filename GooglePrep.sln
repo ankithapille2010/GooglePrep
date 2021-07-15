@@ -27,7 +27,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackspaceStringCompare", "B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumCosttoHireKWorkers", "MinimumCosttoHireKWorkers\MinimumCosttoHireKWorkers.csproj", "{8CEE231D-833A-4236-BB2D-532F8BC07EF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KClosestPoint", "KClosestPoint\KClosestPoint.csproj", "{0C9AC34B-3051-47C1-BE99-2734D63049F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KClosestPoint", "KClosestPoint\KClosestPoint.csproj", "{0C9AC34B-3051-47C1-BE99-2734D63049F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KClosestPoint-Atl", "KClosestPoint-Atl\KClosestPoint-Atl.csproj", "{6357DF2A-287F-4872-83E5-28E00E0ECE9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{0C9AC34B-3051-47C1-BE99-2734D63049F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C9AC34B-3051-47C1-BE99-2734D63049F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C9AC34B-3051-47C1-BE99-2734D63049F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6357DF2A-287F-4872-83E5-28E00E0ECE9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6357DF2A-287F-4872-83E5-28E00E0ECE9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6357DF2A-287F-4872-83E5-28E00E0ECE9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6357DF2A-287F-4872-83E5-28E00E0ECE9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
