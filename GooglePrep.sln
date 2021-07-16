@@ -31,6 +31,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KClosestPoint", "KClosestPo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KClosestPoint-Atl", "KClosestPoint-Atl\KClosestPoint-Atl.csproj", "{6357DF2A-287F-4872-83E5-28E00E0ECE9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddTwoNumbers-LinkedList", "AddTwoNumbers-LinkedList\AddTwoNumbers-LinkedList.csproj", "{6B9E83C2-F694-428F-97ED-AD08AA84C7E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeTwosortedLists", "MergeTwosortedLists\MergeTwosortedLists.csproj", "{0C84D6F0-E3AC-44C9-8A7E-BCD3966435DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{6357DF2A-287F-4872-83E5-28E00E0ECE9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6357DF2A-287F-4872-83E5-28E00E0ECE9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6357DF2A-287F-4872-83E5-28E00E0ECE9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B9E83C2-F694-428F-97ED-AD08AA84C7E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B9E83C2-F694-428F-97ED-AD08AA84C7E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B9E83C2-F694-428F-97ED-AD08AA84C7E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B9E83C2-F694-428F-97ED-AD08AA84C7E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C84D6F0-E3AC-44C9-8A7E-BCD3966435DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C84D6F0-E3AC-44C9-8A7E-BCD3966435DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C84D6F0-E3AC-44C9-8A7E-BCD3966435DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C84D6F0-E3AC-44C9-8A7E-BCD3966435DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
