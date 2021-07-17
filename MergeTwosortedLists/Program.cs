@@ -17,9 +17,9 @@ namespace MergeTwosortedLists
     {
         static void Main(string[] args)
         {
-            int[] arr1 = {1,2,3 };
+            int[] arr1 = {-9,3};
             ListNode head1 = InsertIntoLinkedList(arr1);
-            int[] arr2 = {1,3,4 };
+            int[] arr2 = {5,7};
             ListNode head2 = InsertIntoLinkedList(arr2);
             ListNode mergehead = MergeLists(head1, head2);
             parseLinkedList(mergehead);
@@ -53,27 +53,39 @@ namespace MergeTwosortedLists
         private static ListNode MergeLists(ListNode head1, ListNode head2)
         {
             ListNode head = null;
+            ListNode curr = null;
             SortedList<int, int> mList = new SortedList<int, int>();
-           
-            while (head1 != null || head2 != null)
+
+            while (head1 != null && head2 != null)
             {
-                int val = head1.val < head2.val ? head1.val : head2.val;
+                int val = 0;
+                if (head1.val < head2.val)
+                {
+                    val = head1.val;
+                    head1 = head1.next;
+                }
+                else
+                {
+                    val = head2.val;
+                    head2 = head2.next;
+                }
                 if (mList.ContainsKey(val))
                     mList[val]++;
                 else
-                    mList.Add(val,1);
-                head1 = head1.next;
-                head2 = head2.next;
+                    mList.Add(val, 1);
+
             }
-            if (head1 != null)
+
+            while (head1 != null)
             {
+                
                 if (mList.ContainsKey(head1.val))
                     mList[head1.val]++;
                 else
                     mList.Add(head1.val, 1);
                 head1 = head1.next;
             }
-            if (head2 != null)
+            while (head2 != null)
             {
                 if (mList.ContainsKey(head2.val))
                     mList[head2.val]++;
@@ -82,11 +94,31 @@ namespace MergeTwosortedLists
                 head2 = head2.next;
             }
 
-            foreach (KeyValuePair<int,int> l in mList)
-            {
-                for (int i= 0;i <l.Value;i++)
-                Console.Write(l.Key+ " ");
+
+            while (mList.Count != 0) {
+
+                if (head == null)
+                {
+                    head = new ListNode(mList.Keys[0]);
+                    if (mList.Values[0] == 1)
+                        mList.Remove(mList.Keys[0]);
+                    else
+                        mList[mList.Keys[0]]--;
+                    curr = head;
+                }
+                else
+                {
+                    curr.next = new ListNode(mList.Keys[0]);
+                    if (mList.Values[0]==1)
+                        mList.Remove(mList.Keys[0]);
+                    else
+                        mList[mList.Keys[0]]--;
+                    curr = curr.next;
+                    
+                }
+
             }
+        
 
             return head;
         }
