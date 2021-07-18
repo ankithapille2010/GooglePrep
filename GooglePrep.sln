@@ -33,7 +33,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KClosestPoint-Atl", "KClose
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddTwoNumbers-LinkedList", "AddTwoNumbers-LinkedList\AddTwoNumbers-LinkedList.csproj", "{6B9E83C2-F694-428F-97ED-AD08AA84C7E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeTwosortedLists", "MergeTwosortedLists\MergeTwosortedLists.csproj", "{0C84D6F0-E3AC-44C9-8A7E-BCD3966435DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeTwosortedLists", "MergeTwosortedLists\MergeTwosortedLists.csproj", "{0C84D6F0-E3AC-44C9-8A7E-BCD3966435DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberOfIslands", "NumberOfIslands\NumberOfIslands.csproj", "{58DFA5BD-5B9D-4471-9711-6E246F36304F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordLadder", "WordLadder\WordLadder.csproj", "{EBABA695-6B06-484C-8C38-C034329D1862}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseSchedule2", "CourseSchedule2\CourseSchedule2.csproj", "{5632AB37-DAB9-48FF-922A-30C6AA602A8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +111,18 @@ Global
 		{0C84D6F0-E3AC-44C9-8A7E-BCD3966435DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C84D6F0-E3AC-44C9-8A7E-BCD3966435DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C84D6F0-E3AC-44C9-8A7E-BCD3966435DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58DFA5BD-5B9D-4471-9711-6E246F36304F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58DFA5BD-5B9D-4471-9711-6E246F36304F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58DFA5BD-5B9D-4471-9711-6E246F36304F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58DFA5BD-5B9D-4471-9711-6E246F36304F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBABA695-6B06-484C-8C38-C034329D1862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBABA695-6B06-484C-8C38-C034329D1862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBABA695-6B06-484C-8C38-C034329D1862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBABA695-6B06-484C-8C38-C034329D1862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5632AB37-DAB9-48FF-922A-30C6AA602A8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5632AB37-DAB9-48FF-922A-30C6AA602A8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5632AB37-DAB9-48FF-922A-30C6AA602A8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5632AB37-DAB9-48FF-922A-30C6AA602A8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
