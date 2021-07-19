@@ -16,52 +16,40 @@ namespace BinaryTreeMaxPathSum
     }
     class Program
     {
+        static int max_sum = Int32.MinValue;
         static void Main(string[] args)
         {
             int?[] inputs = new int? []{-10, 9, 20, null, null, 15, 7 };
-
-            TreeNode root = new TreeNode(-10, null, null);
+            TreeNode root = new TreeNode(-10,null,null);
             root.left = new TreeNode(9,null,null);
             root.right = new TreeNode(20, null, null);
-            TreeNode currNode = root;
-            int i = 1;
 
-            while (i < inputs.Length)
-            {
-                Console.WriteLine(currNode.val);
-                currNode.left = new TreeNode(inputs[i]);
-                i++;
-                currNode.right = new TreeNode(inputs[i]);
-                i++;
+            root.left.left = null;
+            root.left.left = null;
 
-                if (currNode.left == null)
-                    currNode = currNode.left;
-                else
-                    currNode = currNode.right;
-            }
-         }
-
-        private static void ParseBinaryTree(TreeNode root)
-        {
-            while (root != null)
-            {
-                Console.WriteLine();
-            }
-
+            root.right.left = new TreeNode(15,null,null);
+            root.right.right = new TreeNode(7, null, null);
+            Console.WriteLine(MaxPathSum(root));
+            
         }
 
-        private static TreeNode InsertIntoBinaryTree(int?[] inputs)
+        public static int MaxPathSum(TreeNode root)
         {
-            TreeNode root = new TreeNode(inputs[0],null,null);
-            TreeNode currNode = root;
-            for(int i =1;i< inputs.Length-2; i++)
-            {
-               // Console.WriteLine()
-                currNode.left = new TreeNode(inputs[i], null, null);
-                currNode.right = new TreeNode(inputs[i + 1], null, null);
-                currNode = currNode.left!=null?currNode.left:currNode.right;
-            }
-            return root;
+            maxGain(root);
+            return max_sum;
+        }
+
+        private static int maxGain(TreeNode root)
+        {
+            if (root == null)
+                return 0;
+            int left_gain = Math.Max(maxGain(root.left), 0);
+            int right_gain = Math.Max(maxGain(root.right), 0);
+            int path_val = (int)root.val + left_gain + right_gain;
+
+            max_sum = Math.Max(path_val,max_sum);
+
+            return (int)root.val + Math.Max(left_gain, right_gain);
         }
     }
 }
