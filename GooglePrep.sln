@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MissingRanges", "GooglePrep\MissingRanges.csproj", "{45E40A75-7ED2-4C97-AEAD-A89AF5375098}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextClosedTime", "NextClosedTime\NextClosedTime.csproj", "{A22AD214-1A26-443C-8773-C46B0D3F7482}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindReplaceString", "FindReplaceString\FindReplaceString.csproj", "{A8158D3F-DF1B-405C-9151-14FE33BFF68A}"
@@ -43,16 +41,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseSchedule2", "CourseSc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeMaxPathSum", "BinaryTreeMaxPathSum\BinaryTreeMaxPathSum.csproj", "{3843D571-A610-4FD2-9D23-CA8C10BE143B}"
 EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "MissingRanges", "GooglePrep\MissingRanges.csproj", "{DB8D9246-DF7C-49F5-B3BB-DE8272984123}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountCompleteTreeNodes", "CountCompleteTreeNodes\CountCompleteTreeNodes.csproj", "{2809A9A1-3585-46D0-BCCD-7DE5DD3620DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{45E40A75-7ED2-4C97-AEAD-A89AF5375098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45E40A75-7ED2-4C97-AEAD-A89AF5375098}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45E40A75-7ED2-4C97-AEAD-A89AF5375098}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45E40A75-7ED2-4C97-AEAD-A89AF5375098}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A22AD214-1A26-443C-8773-C46B0D3F7482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A22AD214-1A26-443C-8773-C46B0D3F7482}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A22AD214-1A26-443C-8773-C46B0D3F7482}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -129,6 +127,14 @@ Global
 		{3843D571-A610-4FD2-9D23-CA8C10BE143B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3843D571-A610-4FD2-9D23-CA8C10BE143B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3843D571-A610-4FD2-9D23-CA8C10BE143B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB8D9246-DF7C-49F5-B3BB-DE8272984123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB8D9246-DF7C-49F5-B3BB-DE8272984123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB8D9246-DF7C-49F5-B3BB-DE8272984123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB8D9246-DF7C-49F5-B3BB-DE8272984123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2809A9A1-3585-46D0-BCCD-7DE5DD3620DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2809A9A1-3585-46D0-BCCD-7DE5DD3620DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2809A9A1-3585-46D0-BCCD-7DE5DD3620DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2809A9A1-3585-46D0-BCCD-7DE5DD3620DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
