@@ -24,27 +24,46 @@ namespace CountCompleteTreeNodes
             root.right = new TreeNode(3, null, null);
 
             root.left.left = new TreeNode(4, null, null); ;
-            root.left.left = new TreeNode(5, null, null); ;
+            root.left.right = new TreeNode(5, null, null); ;
 
             root.right.left = new TreeNode(6, null, null);
-            root.right.right = null;
+            //root.right.right = null;
             Console.WriteLine(CountNodes(root));
         }
+
         public static int CountNodes(TreeNode root)
         {
-            int depth = ComputeDepth(root);
-            Console.WriteLine(depth);
-            return 0;
+            if (root == null)
+                return 0;
+            int leftH = GetLeftHeight(root);
+            int rightH = GetRightHeight(root);
+       
+            if (leftH > rightH)
+                return 1 + CountNodes(root.left) + CountNodes(root.right);
+            
+            else
+                return (int)(Math.Pow(2, leftH)) - 1;
+
         }
-        public static int ComputeDepth(TreeNode root)
+
+        public static int GetLeftHeight(TreeNode root)
         {
-            int depth = 0;
-            while (root.left != null)
-            {
-                root = root.left;
-                ++depth;
-            }
-            return depth;
+           
+            if (root == null)
+                return 0;
+
+            return 1 + GetLeftHeight(root.left);
         }
+        public static int GetRightHeight(TreeNode root)
+        {
+            if (root == null)
+                return 0;
+
+            return 1 + GetRightHeight(root.right);
+        }
+
+
+
+
     }
 }
