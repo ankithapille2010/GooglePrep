@@ -41,8 +41,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseSchedule2", "CourseSc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTreeMaxPathSum", "BinaryTreeMaxPathSum\BinaryTreeMaxPathSum.csproj", "{3843D571-A610-4FD2-9D23-CA8C10BE143B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MissingRanges", "GooglePrep\MissingRanges.csproj", "{DB8D9246-DF7C-49F5-B3BB-DE8272984123}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountCompleteTreeNodes", "CountCompleteTreeNodes\CountCompleteTreeNodes.csproj", "{2809A9A1-3585-46D0-BCCD-7DE5DD3620DB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongestIncreasingPathInMatrix", "LongestIncreasingPathInMatrix\LongestIncreasingPathInMatrix.csproj", "{B1ED70F1-8CF6-4AB2-8C4C-2B156168D4D7}"
@@ -54,6 +52,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiameterBinaryTree", "DiameterBinaryTree\DiameterBinaryTree.csproj", "{B3D36439-AA4D-437B-8FC1-B7EE07AA0A7E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsomorphicStrings", "IsomorphicStrings\IsomorphicStrings.csproj", "{EE98BC88-0345-4021-B39C-4B1234C7F458}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "MissingRanges", "GooglePrep\MissingRanges.csproj", "{A6ACE26E-22D5-431F-9295-EDA38CDEBDC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrobogrammaticNumber", "StrobogrammaticNumber\StrobogrammaticNumber.csproj", "{C67006FA-C0A4-4127-AC8E-C53A03E2320D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cowAndBulls", "cowAndBulls\cowAndBulls.csproj", "{200AFC72-479C-456F-B2E1-2739E5518E60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -137,10 +141,6 @@ Global
 		{3843D571-A610-4FD2-9D23-CA8C10BE143B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3843D571-A610-4FD2-9D23-CA8C10BE143B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3843D571-A610-4FD2-9D23-CA8C10BE143B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DB8D9246-DF7C-49F5-B3BB-DE8272984123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB8D9246-DF7C-49F5-B3BB-DE8272984123}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB8D9246-DF7C-49F5-B3BB-DE8272984123}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB8D9246-DF7C-49F5-B3BB-DE8272984123}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2809A9A1-3585-46D0-BCCD-7DE5DD3620DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2809A9A1-3585-46D0-BCCD-7DE5DD3620DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2809A9A1-3585-46D0-BCCD-7DE5DD3620DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -165,6 +165,18 @@ Global
 		{EE98BC88-0345-4021-B39C-4B1234C7F458}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE98BC88-0345-4021-B39C-4B1234C7F458}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE98BC88-0345-4021-B39C-4B1234C7F458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6ACE26E-22D5-431F-9295-EDA38CDEBDC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6ACE26E-22D5-431F-9295-EDA38CDEBDC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6ACE26E-22D5-431F-9295-EDA38CDEBDC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6ACE26E-22D5-431F-9295-EDA38CDEBDC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67006FA-C0A4-4127-AC8E-C53A03E2320D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67006FA-C0A4-4127-AC8E-C53A03E2320D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67006FA-C0A4-4127-AC8E-C53A03E2320D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67006FA-C0A4-4127-AC8E-C53A03E2320D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{200AFC72-479C-456F-B2E1-2739E5518E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{200AFC72-479C-456F-B2E1-2739E5518E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{200AFC72-479C-456F-B2E1-2739E5518E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{200AFC72-479C-456F-B2E1-2739E5518E60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
