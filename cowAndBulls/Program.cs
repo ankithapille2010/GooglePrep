@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace cowAndBulls
@@ -13,14 +14,14 @@ namespace cowAndBulls
         {
             int numOfBulls = 0;
             int numOfCows = 0;
-            Dictionary<char, SortedSet<int>> sect = new Dictionary<char, SortedSet<int>>();
-            Dictionary<char, SortedSet<int>> gues = new Dictionary<char, SortedSet<int>>();
+            Dictionary<char, IList  <int>> sect = new Dictionary<char, IList<int>>();
+            Dictionary<char, IList<int>> gues = new Dictionary<char, IList<int>>();
             for (int i=0;i<secret.Length;i++)
             {
                 if (!sect.ContainsKey(secret[i]))
                 {
                     
-                    sect.Add(secret[i], new SortedSet<int> { i });
+                    sect.Add(secret[i], new List<int> { i });
                 }
                 else
                     sect[secret[i]].Add(i);
@@ -32,53 +33,69 @@ namespace cowAndBulls
                 if (!gues.ContainsKey(guess[i]))
                 {
 
-                    gues.Add(guess[i], new SortedSet<int> { i });
+                    gues.Add(guess[i], new List<int> { i });
                 }
                 else
                     gues[guess[i]].Add(i);
 
             }
+         
 
             //First pass for bulls
-            foreach(var g in gues)
+            foreach (var g in guess)
             {
-                if (sect.ContainsKey(g.Key))
+                Console.WriteLine(g);
+                if (sect.ContainsKey(g))
                 {
-
-                   foreach(int i in g.Value)
+                    var l = gues[g];
+                   
+                    for (int i =0;i<l.Count;i++)
                     {
-                        if (sect[g.Key].Contains(i))
+                       
+                        if (sect[g].Contains(l[i]))
                         {
-                            if (sect[g.Key].Count > 1)
-                                sect[g.Key].Remove(i);
+                            //Console.WriteLine(gues[g].Count);
+                            if (gues[g].Count > 1)
+                            {
+                                gues[g].Remove(l[i]);
+                                sect[g].Remove(l[i]);
+                            }
                             else
-                                sect.Remove(g.Key);
+                            {
+                               // Console.WriteLine(g);
+                                gues.Remove(g);
+                                sect.Remove(g);
+                               
+                            }
 
                             numOfBulls++;
                         }
                     }
                 }
             }
-            //Second pass for cows
-            foreach (var g in gues)
+
+        /*   foreach (var g in gues)
             {
-                if (sect.ContainsKey(g.Key))
-                {
+               Console.WriteLine(g.Key);
+                var l = g.Value;
+                for (int i = 0; i < l.Count; i++)
+                    Console.WriteLine(l[i]);
 
-                    foreach (int i in g.Value)
-                    {
-                        //if (sect[g.Key].Contains(i))
-                        //{
-                            if (sect[g.Key].Count > 1)
-                                sect[g.Key].Remove(i);
-                            else
-                                sect.Remove(g.Key);
 
-                            numOfCows++;
-                        //}
-                    }
-                }
-            }
+            }*/
+          /*  foreach (var s in sect)
+            {
+                Console.WriteLine(s.Key);
+                var l = s.Value;
+                for (int i = 0; i < l.Count; i++)
+                    Console.WriteLine(l[i]);
+
+
+            }*/
+
+            //Second pass for cows
+
+
             return new string(numOfBulls+"A"+numOfCows+"B");
         }
     }
